@@ -226,7 +226,3 @@ src/
     TransformSection.tsx # Image transformation UI component
   styles.css             # Basic styles (imported but not actively used)
 ```
-
-## License
-
-MIT
