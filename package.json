@@ -1,0 +1,49 @@
+{
+  "name": "image-upload-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Image upload service with R2 and Cloudflare",
+  "keywords": [
+    "images",
+    "r2",
+    "cloudflare"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "start": "vite dev",
+    "deploy": "vite build && wrangler deploy",
+    "types": "wrangler types env.d.ts",
+    "format": "oxfmt --write .",
+    "lint": "oxlint src/",
+    "check": "oxfmt --check . && oxlint src/ && tsc"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.46.0",
+    "@cloudflare/workers-types": "^5.20261021.1",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "autoprefixer": "^10.4.20",
+    "oxfmt": "^0.56.0",
+    "oxlint": "^1.71.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0",
+    "wrangler": "^4.151.3"
+  },
+  "allowScripts": {
+    "core-js-pure@3.49.0": true,
+    "esbuild@0.28.1": true,
+    "workerd@1.20260721.1": true,
+    "sharp@0.34.5": true,
+    "fsevents@2.3.3": true
+  }
+}

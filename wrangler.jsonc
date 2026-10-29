@@ -1,0 +1,19 @@
+{
+	"name": "image-upload-service",
+	"main": "src/server.ts",
+	"upload_source_maps": true,
+	"compatibility_date": "2026-07-28",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"r2_buckets": [
+		{
+			"binding": "IMAGES_BUCKET",
+			"bucket_name": "image-uploads",
+			"remote": true
+		}
+	],
+	"vars": {
+		"CORS_ALLOW_ORIGIN": "*"
+	}
+}
