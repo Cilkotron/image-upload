@@ -4,9 +4,9 @@
   "private": true,
   "description": "Image upload service with R2 and Cloudflare",
   "keywords": [
+    "cloudflare",
     "images",
-    "r2",
-    "cloudflare"
+    "r2"
   ],
   "license": "MIT",
   "type": "module",
@@ -20,6 +20,7 @@
     "check": "oxfmt --check . && oxlint src/ && tsc"
   },
   "dependencies": {
+    "@cf-wasm/photon": "^0.4.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
